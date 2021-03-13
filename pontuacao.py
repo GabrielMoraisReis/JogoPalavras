@@ -1,17 +1,25 @@
-def calcula_pontuacao_palavra(word, dicionario_pontuacao):
+def calcula_pontuacao_palavra(palavra, dicionario_pontuacao):
     pontuacao = 0
-    for letra in word:
+    for letra in palavra:
         pontuacao += dicionario_pontuacao[letra]
     return pontuacao
 
-def calcula_pontuacao_maxima():
+def gera_banco_pontuado(banco_palavras, dicionario_pontuacao):
+    pontuacao = 0
+    banco_palavras_pontuado = dict()
+    for palavra in banco_palavras:
+        pontuacao = calcula_pontuacao_palavra(palavra, dicionario_pontuacao)
+        banco_palavras_pontuado[palavra] = pontuacao
+    return banco_palavras_pontuado
+
+def calcula_pontuacao_maxima(banco_palavras):
     pontuacao_maxima = 0
     pontuacao_palavra = calcula_pontuacao_palavra()
     palavras_maior_valor = list()
     if pontuacao_palavra > pontuacao_maxima:
         pontuacao_maxima = pontuacao_palavra
         palavras_maior_valor.clear()
-        palavras_maior_valor.append(word)
+        #palavras_maior_valor.append(word)
     elif pontuacao_palavra == pontuacao_maxima:
         palavras_maior_valor.append(word)
 

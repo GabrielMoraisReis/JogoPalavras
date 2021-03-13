@@ -15,6 +15,8 @@ banco_palavras = ['abacaxi', 'manada', 'mandar', 'porta', 'mesa', 'dado', 'manga
 'goiaba', 'gratuito', 'hidrico', 'homem', 'jantar', 'jogos', 'montagem', 'manual', 'nuvem', 'neve', 'operacao', 'ontem', 
 'pato', 'pe', 'viagem', 'queijo', 'quarto', 'quintal', 'solto', 'rota', 'selva', 'tatuagem', 'tigre', 'uva', 'ultimo', 
 'vituperio', 'voltagem', 'zangado', 'zombaria', 'dor']
+banco_palavras = pontuacao.gera_banco_pontuado(banco_palavras, dicionario_pontuacao)
+
 
 letras_rodada = str.lower(input("Digite as letras disponíveis nesta jogada: "))
 letras_rodada, letras_nao_usadas = tratamento_entrada.freq_letra(letras_rodada, dicionario_pontuacao)
