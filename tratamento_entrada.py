@@ -2,6 +2,7 @@ import collections
 
 
 def trata_entrada(letras_rodada, dicionario_pontuacao):
+    letras_rodada = str.lower(letras_rodada)
     letras_nao_usadas = list()
     for char in letras_rodada:      
         #Remove os caracteres inválidos(não presentes nas letras pontuadas) da lista de letras utilizáveis da rodada, 
