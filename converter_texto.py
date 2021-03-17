@@ -1,4 +1,4 @@
-from unidecode import unidecode
+from unidecode import unidecode #Pode ser necessário o download dessa biblioteca
 dicionario_palavras_original = ["Abacaxi", "Manada", "mandar", "porta", "mesa", "Dado", "Mangas", "Já", "coisas",
 "radiografia", "matemática", "Drogas", "prédios", "implementação", "computador", "balão",
 "Xícara", "Tédio", "faixa", "Livro", "deixar", "superior", "Profissão", "Reunião", "Prédios",
